@@ -70,7 +70,7 @@ function getBotResponse(input) {
     return "Sadia enjoys coding, exploring AI, and designing interfaces.";
   } else if (input.includes("what can you do") || input.includes("features")) {
     return "I can tell you about Sadia’s skills, education, projects, goals, and how to contact her.";
-  } else if (input.includes("why you created") || input.includes("purpose")) {
+  } else if (input.includes("why you created") || input.includes("purpose") || input.includes("create")) {
     return "This chatbot was created by Sadia to demonstrate her web and backend integration skills!";
   } else if (input.includes("resume") || input.includes("cv")) {
     return "You can request Sadia’s resume by contacting her via email or LinkedIn.";
@@ -125,4 +125,5 @@ function sendMessage() {
   // Scroll to bottom
   chatlog.scrollTop = chatlog.scrollHeight;
 }
+
 
