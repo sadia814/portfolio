@@ -36,7 +36,7 @@ function getBotResponse(input) {
   ) {
     return "Hi! I'm Sadia, a Software Engineering student passionate about web development, backend, and AI integration. I’ve built this chatbot to showcase my skills. Ask me about my projects, skills, or how to contact me!";
   } else if (input.includes("projects")) {
-    return "Check out Sadia’s projects on GitHub: https://github.com/yourusername";
+    return "Check out Sadia’s projects on GitHub: https://github.com/sadia814 ";
   } else if (input.includes("contact")) {
     return "You can contact Sadia at sadiaabdulmajeed4545@gmail.com or on LinkedIn.";
   } else if (
@@ -125,5 +125,6 @@ function sendMessage() {
   // Scroll to bottom
   chatlog.scrollTop = chatlog.scrollHeight;
 }
+
 
 
