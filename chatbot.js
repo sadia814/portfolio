@@ -59,7 +59,7 @@ function getBotResponse(input) {
   else if (input.includes("location") || input.includes("where are you from")) {
     return "Sadia is from Lahore, Pakistan.";
   } else if (input.includes("github")) {
-    return "Visit Sadia's GitHub profile: https://github.com/yourusername";
+    return "Visit Sadia's GitHub profile:  https://github.com/sadia814";
   } else if (input.includes("linkedin")) {
     return "Here is Sadia's LinkedIn profile: https://linkedin.com/in/sadiaabdulmajeed";
   } else if (input.includes("languages you know") || input.includes("coding languages")) {
@@ -125,6 +125,7 @@ function sendMessage() {
   // Scroll to bottom
   chatlog.scrollTop = chatlog.scrollHeight;
 }
+
 
 
 
