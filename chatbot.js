@@ -88,7 +88,9 @@ function getBotResponse(input) {
   } else if (input.includes("motivation") || input.includes("why coding")) {
     return "Sadia loves building useful tools and bringing ideas to life, which is why she chose software engineering.";
   }
-  // New additional questions
+
+  // Added extra questions and jokes - ONLY these below
+
   else if (input.includes("favorite food") || input.includes("like to eat")) {
     return "Sadia loves eating biryani and enjoys trying new cuisines!";
   } else if (input.includes("favorite movie") || input.includes("movies")) {
@@ -101,9 +103,7 @@ function getBotResponse(input) {
     return "Sadia loves traveling and exploring new places whenever she gets a chance.";
   } else if (input.includes("pets") || input.includes("animals")) {
     return "Sadia is an animal lover and dreams of having a dog someday.";
-  }
-  // Jokes added
-  else if (input.includes("joke") || input.includes("funny") || input.includes("make me laugh")) {
+  } else if (input.includes("joke") || input.includes("funny") || input.includes("make me laugh")) {
     const jokes = [
       "Why do programmers prefer dark mode? Because light attracts bugs! 🐞",
       "Why was the JavaScript developer sad? Because they didn’t know how to 'null' their feelings.",
@@ -114,6 +114,7 @@ function getBotResponse(input) {
     ];
     return jokes[Math.floor(Math.random() * jokes.length)];
   }
+
   // Default fallback
   else {
     return "I'm not sure how to answer that. Try asking about skills, projects, or contact.";
