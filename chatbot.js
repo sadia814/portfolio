@@ -53,10 +53,7 @@ function getBotResponse(input) {
     return "Sadia is passionate about web development, Python, AI, and creating impactful digital solutions.";
   } else if (input.includes("goals") || input.includes("future")) {
     return "Sadia aims to become a full-stack developer and explore AI integration in web platforms.";
-  }
-
-  // Additional Questions
-  else if (input.includes("location") || input.includes("where are you from")) {
+  } else if (input.includes("location") || input.includes("where are you from")) {
     return "Sadia is from Lahore, Pakistan.";
   } else if (input.includes("github")) {
     return "Visit Sadia's GitHub profile:  https://github.com/sadia814";
@@ -91,7 +88,32 @@ function getBotResponse(input) {
   } else if (input.includes("motivation") || input.includes("why coding")) {
     return "Sadia loves building useful tools and bringing ideas to life, which is why she chose software engineering.";
   }
-
+  // New additional questions
+  else if (input.includes("favorite food") || input.includes("like to eat")) {
+    return "Sadia loves eating biryani and enjoys trying new cuisines!";
+  } else if (input.includes("favorite movie") || input.includes("movies")) {
+    return "Sadia enjoys watching sci-fi and fantasy movies in her free time.";
+  } else if (input.includes("music") || input.includes("favorite song")) {
+    return "Sadia likes listening to soft rock and instrumental music while coding.";
+  } else if (input.includes("weather")) {
+    return "I don't have weather updates yet, but you can try asking a weather app!";
+  } else if (input.includes("holiday") || input.includes("vacation")) {
+    return "Sadia loves traveling and exploring new places whenever she gets a chance.";
+  } else if (input.includes("pets") || input.includes("animals")) {
+    return "Sadia is an animal lover and dreams of having a dog someday.";
+  }
+  // Jokes added
+  else if (input.includes("joke") || input.includes("funny") || input.includes("make me laugh")) {
+    const jokes = [
+      "Why do programmers prefer dark mode? Because light attracts bugs! 🐞",
+      "Why was the JavaScript developer sad? Because they didn’t know how to 'null' their feelings.",
+      "Why do Python programmers have low self-esteem? Because they constantly compare themselves to others!",
+      "How many programmers does it take to change a light bulb? None, that's a hardware problem!",
+      "Why did the developer go broke? Because he used up all his cache!",
+      "Why do Java developers wear glasses? Because they don't see sharp!"
+    ];
+    return jokes[Math.floor(Math.random() * jokes.length)];
+  }
   // Default fallback
   else {
     return "I'm not sure how to answer that. Try asking about skills, projects, or contact.";
@@ -125,7 +147,4 @@ function sendMessage() {
   // Scroll to bottom
   chatlog.scrollTop = chatlog.scrollHeight;
 }
-
-
-
 
